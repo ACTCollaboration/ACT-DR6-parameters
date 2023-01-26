@@ -1,0 +1,44 @@
+camb:
+  stop_at_error: True
+  
+  extra_args:
+    kmax: 10
+    k_per_logint: 130
+    nonlinear: True
+    lens_potential_accuracy: 8
+    lens_margin: 2050
+    AccuracyBoost: 2.0
+    lSampleBoost: 2.0
+    lAccuracyBoost: 2.0
+    DoLateRadTruncation: False
+  
+  params:
+    thetastar:
+      latex: \theta_\star
+      derived: True
+    sigma8:
+      latex: \sigma_8
+      derived: True
+    YHe:
+      latex: Y_\mathrm{He}
+      derived: True
+    zrei:
+      latex: z_\mathrm{reio}
+      derived: True
+    taurend:
+      latex: \tau_\mathrm{rec}
+      derived: True
+    # zrend (redshift at end of recombination)
+    # rrend (comoving sound horizon at end of recombination)
+    # rarend (conformal angular diameter distance to end of recombination)
+    # taustar (conformal time at photon optical depth unity)
+    zstar:
+      latex: z_\star
+      derived: True
+    rstar:
+      latex: r_{s,\star}
+      derived: True
+    # rastar (conformal angular diameter distance to photon optical depth unity)
+    zdrag:
+      latex: z_d
+      derived: True

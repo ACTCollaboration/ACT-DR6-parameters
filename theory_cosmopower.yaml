@@ -1,0 +1,82 @@
+soliket.CosmoPower:
+  stop_at_error: True
+  network_path: "/path/to/cosmopower/networks/"
+  network_settings:
+    tt:
+      type: NN
+      filename: "TT_cp_NN_Oct22_bao_pks_nozpk"
+      log: True
+      has_ell_factor: True
+    te:
+      type: PCAplusNN
+      filename: "TE_cp_PCAplusNN_Oct22_bao_pks_nozpk"
+      log: False
+      has_ell_factor: True
+    ee:
+      type: NN
+      filename: "EE_cp_NN_Oct22_bao_pks_nozpk"
+      log: True
+      has_ell_factor: True
+  renames:
+    ombh2: omega_b
+    omch2: omega_cdm
+    logA: ln10^{10}A_s
+    ns: n_s
+    tau: tau_reio
+
+soliket.CosmoPowerDerived:
+  stop_at_error: True
+  network_path: "/path/to/cosmopower/networks/"
+  network_settings:
+    type: NN
+    filename: DER_cp_NN_Oct22_bao_pks_nozpk
+    log: True
+  derived_parameters: [ thetas100, sigma8, YHe, zrei, Neff, taurend, zrend, rrend, rarend, taustar, zstar, rstar, rastar, zdrag ]
+  renames:
+    ombh2: omega_b
+    omch2: omega_cdm
+    logA: ln10^{10}A_s
+    ns: n_s
+    tau: tau_reio
+  
+  # All derived parameters that we care about.
+  params:
+    thetas100:
+      latex: "100 \\theta_s"
+      derived: True
+    sigma8:
+      latex: \sigma_8
+      derived: True
+    YHe:
+      latex: Y_\mathrm{He}
+      derived: True
+    zrei:
+      latex: z_\mathrm{reio}
+      derived: True
+    taurend:
+      latex: \tau_\mathrm{rec}
+      derived: True
+    zrend:
+      latex: z_\mathrm{rec}
+      derived: True
+    rrend:
+      latex: r_{s,\mathrm{rec}}
+      derived: True
+    rarend:
+      latex: r_{a,\mathrm{rec}}
+      derived: True
+    taustar:
+      latex: \tau_\star
+      derived: True
+    zstar:
+      latex: z_\star
+      derived: True
+    rstar:
+      latex: r_{s,\star}
+      derived: True
+    rastar:
+      latex: r_{a,\star}
+      derived: True
+    zdrag:
+      latex: z_d
+      derived: True
