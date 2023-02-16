@@ -1,0 +1,21 @@
+name: Testing
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Validate yaml files
+      uses: ibiqlik/action-yamllint@v3
+      config_data: |
+        extends: default
+        rules:
+          line-length:
+            max: 100
+            level: warning
