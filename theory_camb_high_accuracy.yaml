@@ -13,6 +13,9 @@ camb:
     DoLateRadTruncation: False
   
   params:
+    H0:
+      latex: H_0
+      derived: True
     thetastar:
       latex: \theta_\star
       derived: True
