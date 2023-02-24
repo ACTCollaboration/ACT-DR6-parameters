@@ -31,6 +31,10 @@ If you want to add new files, please consider the following style guides:
 
 `params_foreground_Choi2020.yaml` uses the foreground model implemented in MFLike based on the [Choi et al. (2020)](https://arxiv.org/abs/2007.07289) foreground model.
 
+`params_foreground_sims.yaml` uses the same foreground model as above, but allows parameters to go outside physical constraints (i.e. negative for values that are expected to be non-negative).
+
+`params_DR4_baseline.yaml` is a simple set of fixed parameters that can be used to evaluate your model at the *ACT DR4+WMAP baseline* parameters found in Choi et al. and Aiola et al.
+
 # Codes used
 
 ## Likelihood
