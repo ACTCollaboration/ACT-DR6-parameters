@@ -4,7 +4,7 @@ mflike.MFLike:
   input_file: act_simu_sacc_00000.fits
   cov_Bbl_file: act_simu_sacc_cov.fits
 
-  stop_at_error: True
+  stop_at_error: true
 
   foregrounds:
     normalisation:
@@ -35,20 +35,20 @@ mflike.MFLike:
       ET: [2, 5000]
       EE: [2, 5000]
     scales_90GHz: &scales_90GHz
-      TT: [ 800, 5000]
-      TE: [ 800, 5000]
-      ET: [ 800, 5000]
-      EE: [ 300, 5000]
+      TT: [800, 5000]
+      TE: [800, 5000]
+      ET: [800, 5000]
+      EE: [300, 5000]
     scales_150GHz: &scales_150GHz
       TT: [1250, 5000]
       TE: [1250, 5000]
       ET: [1250, 5000]
-      EE: [ 300, 5000]
+      EE: [300, 5000]
     scales_220GHz: &scales_220GHz
       TT: [1500, 5000]
       TE: [1500, 5000]
       ET: [1500, 5000]
-      EE: [ 300, 5000]
+      EE: [300, 5000]
 
     symmetrize: false
 

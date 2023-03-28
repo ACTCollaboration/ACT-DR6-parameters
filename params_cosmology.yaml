@@ -25,7 +25,7 @@ logA:
 As:
   value: "lambda logA: 1e-10*np.exp(logA)"
   latex: A_\mathrm{s}
-  derived: True
+  derived: true
 ns:
   prior:
     min: 0.9
