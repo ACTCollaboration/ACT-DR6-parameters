@@ -13,9 +13,10 @@ jobs:
 
     - name: Validate yaml files
       uses: ibiqlik/action-yamllint@v3
-      config_data: |
-        extends: default
-        rules:
-          line-length:
-            max: 100
-            level: warning
+      with:
+        config_data: |
+          extends: default
+          rules:
+            line-length:
+              max: 100
+              level: warning
