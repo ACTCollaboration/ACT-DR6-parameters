@@ -4,7 +4,7 @@
 a_tSZ:
   prior:
     min: -10.0
-    max:  10.0
+    max: +10.0
   ref:
     dist: norm
     loc: 5.6
@@ -14,7 +14,7 @@ a_tSZ:
 a_kSZ:
   prior:
     min: -10.0
-    max:  10.0
+    max: +10.0
   ref:
     dist: norm
     loc: 2.0
@@ -24,7 +24,7 @@ a_kSZ:
 a_p:
   prior:
     min: -50.0
-    max:  50.0
+    max: +50.0
   ref:
     dist: norm
     loc: 6.0
@@ -34,7 +34,7 @@ a_p:
 beta_p:
   prior:
     min: -5.0
-    max:  5.0
+    max: +5.0
   ref:
     dist: norm
     loc: 2.0
@@ -44,7 +44,7 @@ beta_p:
 a_c:
   prior:
     min: -50.0
-    max:  50.0
+    max: +50.0
   proposal: 0.7
   latex: a_c
 beta_c:
@@ -53,31 +53,31 @@ beta_c:
 a_s:
   prior:
     min: -50.0
-    max:  50.0
+    max: +50.0
   proposal: 0.3
   latex: a_s
 a_gtt:
   prior:
     min: -50.0
-    max:  50.0
+    max: +50.0
   proposal: 0.4
   latex: a_\mathrm{dust}^\mathrm{TT}
 a_gte:
   prior:
     min: -1.0
-    max:  1.0
+    max: +1.0
   proposal: 0.03
   latex: a_\mathrm{dust}^\mathrm{TE}
 a_gee:
   prior:
     min: -1.0
-    max:  1.0
+    max: +1.0
   proposal: 0.03
   latex: a_\mathrm{dust}^\mathrm{EE}
 a_psee:
   prior:
     min: -1.0
-    max:  1.0
+    max: +1.0
   ref:
     dist: halfnorm
     loc: 0.0
@@ -87,7 +87,7 @@ a_psee:
 a_pste:
   prior:
     min: -1.0
-    max:  1.0
+    max: +1.0
   ref:
     dist: norm
     loc: 0.0
@@ -97,7 +97,7 @@ a_pste:
 xi:
   prior:
     min: -1.0
-    max:  1.0
+    max: +1.0
   proposal: 0.05
   latex: \xi
 
