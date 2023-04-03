@@ -1,5 +1,5 @@
-mflike.MFLike:
-  data_folder: "/path/to/DR6/data"
+act_dr6_mflike.ACTDR6MFLike:
+  data_folder: ACTDR6MFLike/v0.1
 
   input_file: act_simu_sacc_00000.fits
   cov_Bbl_file: act_simu_sacc_cov.fits
@@ -115,16 +115,5 @@ mflike.MFLike:
       - experiments: [dr6_pa6_f150, dr6_pa6_f150]
         polarizations: *polarizations_auto
         scales: *scales_150GHz
-
-  band_integration:
-    use_external_bandpass: false
-    external_bandpass: false
-    polarized_arrays: false
-    nsteps: 1
-    bandwidth: 0
-
-  systematics_template:
-    has_file: false
-    rootname: test_template
 
   params: null
