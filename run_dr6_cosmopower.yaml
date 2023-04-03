@@ -8,5 +8,5 @@ sampler:
 
 theory: !defaults [theory_cosmopower]
 likelihood: !defaults [likelihood_act_dr6]
-params: !defaults [params_cosmology, params_foregrounds_Choi2020, params_systematics_fixed]
+params: !defaults [params_cosmology_H0, params_foregrounds_Choi2020, params_systematics_fixed]
 prior: !defaults [priors_foregrounds, priors_cosmology]
