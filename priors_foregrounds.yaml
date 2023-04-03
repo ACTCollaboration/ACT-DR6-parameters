@@ -3,8 +3,14 @@
 # whereas the external priors impose extra information from external analyses
 # (i.e. tau constraints from planck lowE measurements).
 
-CIBc_prior: "lambda a_c: stats.norm.logpdf(a_c, loc=4.9, scale=0.9)"
+# The inclusion of 225 GHz data will remove the need for a CIB prior.
+# CIBc_prior: "lambda a_c: stats.norm.logpdf(a_c, loc=4.9, scale=0.9)"
+
+# The radio prior might get updated for future ACT DR6 analysis.
 Radio_prior: "lambda a_s: stats.norm.logpdf(a_s, loc=3.1, scale=0.4)"
+
+# The dust priors will be updated for future ACT DR6 analysis.
+# The current values are still the Choi et al 2020 priors.
 TTdust_prior: "lambda a_gtt: stats.norm.logpdf(a_gtt, loc=8.77, scale=0.30)"
 TEdust_prior: "lambda a_gte: stats.norm.logpdf(a_gte, loc=0.36, scale=0.04)"
 EEdust_prior: "lambda a_gee: stats.norm.logpdf(a_gee, loc=0.13, scale=0.03)"
