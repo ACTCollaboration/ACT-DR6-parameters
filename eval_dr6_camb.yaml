@@ -1,0 +1,12 @@
+debug: false
+force: false
+
+output: chains/dr6-evaluate-bestfit-dr4
+
+sampler:
+  evaluate:
+
+theory: !defaults [theory_camb_high_accuracy]
+likelihood: !defaults [likelihood_act_dr6]
+params: !defaults [params_DR4_bestfit, params_systematics_fixed]
+prior: !defaults [priors_foregrounds, priors_cosmology]
