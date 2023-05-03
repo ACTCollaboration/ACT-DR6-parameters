@@ -41,7 +41,7 @@ If you want to add new files, please consider the following style guides:
 
 The current files are set to be used with the **MFLike** likelihood from the Simons Observatory (SO). Right now, it is set up to be coupled to the main branch release of [the public git](https://github.com/simonsobs/LAT_MFLike).
 
-In the future we intend to release a public **ACT DR6** likelihood implementation based on MFLike. Once we are finalizing this code, we will converge these parameters and settings files to this likelihood.
+We are using the [ACT DR6 MFLike](https://github.com/ACTCollaboration/act_dr6_mflike) likelihood that functions as a DR6-specific implementation for MFLike.
 
 ## Theory
 
