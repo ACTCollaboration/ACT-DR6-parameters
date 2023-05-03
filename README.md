@@ -27,7 +27,7 @@ If you want to add new files, please consider the following style guides:
 
 `theory_camb_high_accuracy.yaml` uses the high accuracy settings for CAMB noted in [Hill et al. (2020)](https://arxiv.org/abs/2109.04451).
 
-`theory_cosmopower.yaml` uses [Cosmopower](https://arxiv.org/abs/2106.03846) as implemented in the _Simons Observatory_ package [SOLikeT](https://github.com/simonsobs/SOLikeT).
+`theory_cosmopower.yaml` uses [Cosmopower](https://arxiv.org/abs/2106.03846) as implemented in the _Simons Observatory_ package [SOLikeT](https://github.com/simonsobs/SOLikeT). See the section _Setting up CosmoPower_ on instructions of setting this up.
 
 `params_foreground_Choi2020.yaml` uses the foreground model implemented in MFLike based on the [Choi et al. (2020)](https://arxiv.org/abs/2007.07289) foreground model.
 
@@ -47,7 +47,15 @@ In the future we intend to release a public **ACT DR6** likelihood implementatio
 
 For cosmological observables, there are two options to be used right now. One can either use [camb](https://github.com/cmbant/CAMB) as it exists within cobaya, or you can use the [cosmopower](https://arxiv.org/abs/2106.03846) code that exists in [SOLikeT](https://github.com/simonsobs/SOLikeT), the likelihood and theory code library developed by the SO collaboration.
 
+### Setting up CosmoPower
+
+If you intend to use the CosmoPower theory code, you should modify the `theory_cosmopower.yaml` file to make sure that the theory code can find your networks. The file is setup for use of the emulators described in [Bolliet et al. (2023)](https://arxiv.org/abs/2303.01591), and you only need to change the two lines that start with `network_path` to the path where you stored the emulators on your machine.
+
+If you intend to use this code with your own emulators, check out the [SOLikeT documentation](https://soliket.readthedocs.io/en/latest/cosmopower.html) on the CosmoPower wrapper for instructions.
+
 ### CosmoPower: 'KeyError: _manual' bug
+
+*This bug has been fixed as of cobaya verison 3.3.*
 
 (TL;DR: see [this](https://github.com/CobayaSampler/cobaya/pull/275) pull request if you get this error).
 
