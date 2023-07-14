@@ -25,7 +25,7 @@ If you want to add new files, please consider the following style guides:
 
 ## Notes on existing files
 
-`theory_camb_high_accuracy.yaml` uses the high accuracy settings for CAMB noted in [Hill et al. (2020)](https://arxiv.org/abs/2109.04451).
+`theory_camb_high_accuracy.yaml` uses the high accuracy settings for CAMB at least as accurate as in [Hill et al. (2020)](https://arxiv.org/abs/2109.04451). Note that we intend to use `cosmorec` instead of `recfast` as main recombination code - see the section _Installing Cosmorec_ below for instructions.
 
 `theory_cosmopower.yaml` uses [Cosmopower](https://arxiv.org/abs/2106.03846) as implemented in the _Simons Observatory_ package [SOLikeT](https://github.com/simonsobs/SOLikeT). See the section _Setting up CosmoPower_ on instructions of setting this up.
 
@@ -47,6 +47,36 @@ We are using the [ACT DR6 MFLike](https://github.com/ACTCollaboration/act_dr6_mf
 
 For cosmological observables, there are two options to be used right now. One can either use [camb](https://github.com/cmbant/CAMB) as it exists within cobaya, or you can use the [cosmopower](https://arxiv.org/abs/2106.03846) code that exists in [SOLikeT](https://github.com/simonsobs/SOLikeT), the likelihood and theory code library developed by the SO collaboration.
 
+### Installing CosmoRec
+
+We use the recombination code [CosmoRec](http://www.jb.man.ac.uk/~jchluba/Science/CosmoRec/CosmoRec.html) for camb. By default, camb only comes with the recombination code Recfast installed, but this code is not accurate enough for our purposes. To install CosmoRec, follow these instructions:
+
+1. Install camb (v1.5.0 or higher) for cobaya.
+
+2. Download and untar CosmoRec via:
+
+```
+wget https://www.cita.utoronto.ca/~jchluba/Recombination/_Downloads_/CosmoRec.v2.0.3b.tar.gz
+tar -xvf CosmoRec.v2.0.3b.tar.gz
+```
+
+3. In the location where you installed camb (this will either be a directory where you have a separate instance of camb, or a directory within your cobaya packages path), locate the `fortran/Makefile_main` file. Add the following two lines all the way at the top:
+
+```
+RECOMBINATION_MODELS = recfast cosmorec
+COSMOREC_PATH = <path/to/cosmorec>
+```
+
+Where `<path/to/cosmorec>` is the path where you unpacked CosmoRec in step 2.
+
+4. Recompile the fortran library by invoking
+
+```
+python setup.py make
+```
+
+in the main `camb` directory. This should compile camb with CosmoRec enabled.
+
 ### Setting up CosmoPower
 
 If you intend to use the CosmoPower theory code, you should modify the `theory_cosmopower.yaml` file to make sure that the theory code can find your networks. The file is setup for use of the emulators described in [Bolliet et al. (2023)](https://arxiv.org/abs/2303.01591), and you only need to change the two lines that start with `network_path` to the path where you stored the emulators on your machine.
@@ -55,7 +85,7 @@ If you intend to use this code with your own emulators, check out the [SOLikeT d
 
 ### CosmoPower: 'KeyError: _manual' bug
 
-*This bug has been fixed as of cobaya verison 3.3.*
+**This bug has been fixed as of cobaya verison 3.3.**
 
 (TL;DR: see [this](https://github.com/CobayaSampler/cobaya/pull/275) pull request if you get this error).
 
