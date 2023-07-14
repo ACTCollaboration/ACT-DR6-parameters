@@ -45,6 +45,10 @@ a_c:
   prior:
     min: -50.0
     max: +50.0
+  ref:
+    dist: norm
+    loc: 3.0
+    scale: 1.0
   proposal: 0.7
   latex: a_c
 beta_c:
@@ -54,24 +58,40 @@ a_s:
   prior:
     min: -50.0
     max: +50.0
+  ref:
+    dist: norm
+    loc: 3.0
+    scale: 1.0
   proposal: 0.3
   latex: a_s
 a_gtt:
   prior:
     min: -50.0
     max: +50.0
+  ref:
+    dist: norm
+    loc: 8.0
+    scale: 0.7
   proposal: 0.4
   latex: a_\mathrm{dust}^\mathrm{TT}
 a_gte:
   prior:
     min: -1.0
     max: +1.0
+  ref:
+    dist: norm
+    loc: 0.1
+    scale: 0.1
   proposal: 0.03
   latex: a_\mathrm{dust}^\mathrm{TE}
 a_gee:
   prior:
     min: -1.0
     max: +1.0
+  ref:
+    dist: norm
+    loc: 0.1
+    scale: 0.1
   proposal: 0.03
   latex: a_\mathrm{dust}^\mathrm{EE}
 a_psee:
@@ -98,6 +118,9 @@ xi:
   prior:
     min: -1.0
     max: +1.0
+  ref:
+    min: 0.0
+    max: 0.5
   proposal: 0.05
   latex: \xi
 
