@@ -63,7 +63,7 @@ tar -xvf CosmoRec.v2.0.3b.tar.gz
 3. In the location where you installed camb (this will either be a directory where you have a separate instance of camb, or a directory within your cobaya packages path), locate the `fortran/Makefile_main` file. Add the following two lines all the way at the top:
 
 ```
-RECOMBINATION_MODELS = recfast cosmorec
+RECOMBINATION_FILES = recfast cosmorec
 COSMOREC_PATH = <path/to/cosmorec>
 ```
 
