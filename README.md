@@ -60,7 +60,9 @@ wget https://www.cita.utoronto.ca/~jchluba/Recombination/_Downloads_/CosmoRec.v2
 tar -xvf CosmoRec.v2.0.3b.tar.gz
 ```
 
-3. In the location where you installed camb (this will either be a directory where you have a separate instance of camb, or a directory within your cobaya packages path), locate the `fortran/Makefile_main` file. Add the following two lines all the way at the top:
+3. In this path, invoke `make all` to compile CosmoRec.
+
+4. Now, in the location where you installed camb (this will either be a directory where you have a separate instance of camb, or a directory within your cobaya packages path), locate the `fortran/Makefile_main` file. Add the following two lines all the way at the top:
 
 ```
 RECOMBINATION_FILES = recfast cosmorec
@@ -69,7 +71,7 @@ COSMOREC_PATH = <path/to/cosmorec>
 
 Where `<path/to/cosmorec>` is the path where you unpacked CosmoRec in step 2.
 
-4. Recompile the fortran library by invoking
+5. Recompile the camb fortran library by invoking
 
 ```
 python setup.py make
