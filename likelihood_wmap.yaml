@@ -1,0 +1,11 @@
+wmaplike.WMAPLike:
+  stop_at_error: True
+  temin: 24
+  params:
+    A_sz:
+      prior:
+        min: 0.0
+        max: 2.0
+      proposal: 0.4
+      ref: 0.0
+      latex: A_\mathrm{SZ}

@@ -1,0 +1,12 @@
+debug: False
+force: False
+
+output: chains/dr6-sroll2-camb-high-accuracy
+
+sampler:
+  mcmc:
+
+theory: !defaults [ theory_camb_high_accuracy ]
+likelihood: !defaults [ likelihood_act_dr6, likelihood_sroll2 ]
+params: !defaults [ params_cosmology, params_foregrounds_Choi2020, params_systematics_fixed ]
+prior: !defaults [ priors_foregrounds ]
