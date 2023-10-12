@@ -43,6 +43,14 @@ The current files are set to be used with the **MFLike** likelihood from the Sim
 
 We are using the [ACT DR6 MFLike](https://github.com/ACTCollaboration/act_dr6_mflike) likelihood that functions as a DR6-specific implementation for MFLike.
 
+### sroll2
+
+For better constraints on reionization, we recommend the use of the ``sroll2`` likelihood. It comes pre-packaged with cobaya, so you can simply invoke ``cobaya-install planck_2018_lowl.EE_sroll2`` once to install the data.
+
+### WMAP
+
+See [this github page](https://github.com/HTJense/pyWMAP) for the open-source python implementation of the high-ell WMAP likelihood that is used.
+
 ## Theory
 
 For cosmological observables, there are two options to be used right now. One can either use [camb](https://github.com/cmbant/CAMB) as it exists within cobaya, or you can use the [cosmopower](https://arxiv.org/abs/2106.03846) code that exists in [SOLikeT](https://github.com/simonsobs/SOLikeT), the likelihood and theory code library developed by the SO collaboration.
