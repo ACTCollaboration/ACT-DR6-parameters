@@ -21,12 +21,12 @@ act_dr6_mflike.ACTDR6MFLike:
       TT: [ 800, 8500]
       TE: [ 800, 8500]
       ET: [ 800, 8500]
-      EE: [ 300, 8500]
+      EE: [ 500, 8500]
     scales_pa6: &scales_pa6
       TT: [ 600, 8500]
       TE: [ 600, 8500]
       ET: [ 600, 8500]
-      EE: [ 300, 8500]
+      EE: [ 500, 8500]
 
   data:
     experiments:
