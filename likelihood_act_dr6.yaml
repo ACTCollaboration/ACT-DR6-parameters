@@ -5,7 +5,6 @@ act_dr6_mflike.ACTDR6MFLike:
   defaults:
     symmetrize: false
     polarizations: [TT, TE, ET, EE]
-    polarizations_pa4: &polarizations_pa4 [TT]
     polarizations_auto: &polarizations_auto [TT, TE, EE]
     scales:
       TT: [2, 8500]
