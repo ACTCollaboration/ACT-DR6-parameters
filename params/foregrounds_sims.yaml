@@ -52,7 +52,14 @@ a_c:
   proposal: 0.7
   latex: a_c
 beta_c:
-  value: "lambda beta_p: beta_p"
+  prior:
+    min: -5.0
+    max: +5.0
+  ref:
+    dist: norm
+    loc: 2.0
+    scale: 0.05
+  proposal: 0.015
   latex: \beta_c
 a_s:
   prior:
@@ -64,6 +71,16 @@ a_s:
     scale: 1.0
   proposal: 0.3
   latex: a_s
+beta_r:
+  prior:
+    min: -5.0
+    max: +5.0
+  ref:
+    dist: norm
+    loc: 2.0
+    scale: 0.05
+  proposal: 0.015
+  latex: \beta_r
 a_gtt:
   prior:
     min: -50.0

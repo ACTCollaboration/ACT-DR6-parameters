@@ -6,32 +6,32 @@ Parameters and run settings for ACT DR6 using cobaya.
 All yaml files are top-level. To perform a run with cobaya, you can invoke
 
 ```
-[python -m] cobaya run run_<file>.yaml
+[python -m] cobaya run runs/<file>.yaml
 ```
 
-Where `run_<file>.yaml` is any one of the run files contained here.
+Where `runs/<file>.yaml` is any one of the run files contained in the `runs/` directory.
 
 If you want to add new files, please consider the following style guides:
 
-- Run files start with `run_`.
+- Run files go into `runs/`.
 
-- Theory code files start with `theory_`.
+- Theory code files go into `theories/`.
 
-- Likelihood files start with `likelihood_`.
+- Likelihood files go into `likelihoods/`.
 
-- Parameter files start with `params_`. You can include priors on your parameters, but please only use physical bounds. External priors (i.e. priors from external analyses) are to be included in prior files. It is recommended to put references on parameters.
+- Parameter files go into `params/`. You can include priors on your parameters, but please only use physical bounds. External priors (i.e. priors from external analyses) are to be included in prior files. It is recommended to put references on parameters.
 
-- Prior files start with `priors_`. These contain external priors only.
+- Prior files go into `priors/`. These contain external priors only.
 
 ## Notes on existing files
 
-`theory_camb_high_accuracy.yaml` uses the high accuracy settings for CAMB at least as accurate as in [Hill et al. (2020)](https://arxiv.org/abs/2109.04451). Note that we intend to use `cosmorec` instead of `recfast` as main recombination code - see the section _Installing Cosmorec_ below for instructions.
+`theories/camb_high_accuracy.yaml` uses the high accuracy settings for CAMB at least as accurate as in [Hill et al. (2020)](https://arxiv.org/abs/2109.04451). Note that we intend to use `cosmorec` instead of `recfast` as main recombination code - see the section _Installing Cosmorec_ below for instructions.
 
-`theory_cosmopower.yaml` uses [Cosmopower](https://arxiv.org/abs/2106.03846) as implemented in the _Simons Observatory_ package [SOLikeT](https://github.com/simonsobs/SOLikeT). See the section _Setting up CosmoPower_ on instructions of setting this up.
+`theories/cosmopower.yaml` uses [Cosmopower](https://arxiv.org/abs/2106.03846) as implemented in the _Simons Observatory_ package [SOLikeT](https://github.com/simonsobs/SOLikeT). See the section _Setting up CosmoPower_ on instructions of setting this up.
 
-`params_foreground_Choi2020.yaml` uses the foreground model implemented in MFLike based on the [Choi et al. (2020)](https://arxiv.org/abs/2007.07289) foreground model.
+`params/foregrounds_Choi2020.yaml` uses the foreground model implemented in MFLike based on the [Choi et al. (2020)](https://arxiv.org/abs/2007.07289) foreground model. The corresponding foreground priors are found in `priors/foregrounds_Choi2020.yaml`.
 
-`params_foreground_sims.yaml` uses the same foreground model as above, but allows parameters to go outside physical constraints (i.e. negative for values that are expected to be non-negative).
+`params_foreground_sims.yaml` uses a model similar to the expected the DR6 foreground model, but allows parameters to go outside physical constraints (i.e. negative for values that are expected to be non-negative). **UPDATE FEB 2024** We will loosen the restriction that the CIB spectral indices are equal (e.g. we now let `beta_c` and `beta_p` vary independently), and we add a varying spectral index for the radio sources `beta_r`.
 
 `params_DR4_baseline.yaml` is a simple set of fixed parameters that can be used to evaluate your model at the *ACT DR4+WMAP baseline* parameters found in Choi et al. and Aiola et al.
 
@@ -101,7 +101,7 @@ If you intend to use this code with your own emulators, check out the [SOLikeT d
 
 ### CosmoPower: 'KeyError: _manual' bug
 
-**This bug has been fixed as of cobaya verison 3.3.**
+**This bug has been fixed as of cobaya verison 3.3. Consider updating your cobaya package.**
 
 (TL;DR: see [this](https://github.com/CobayaSampler/cobaya/pull/275) pull request if you get this error).
 
