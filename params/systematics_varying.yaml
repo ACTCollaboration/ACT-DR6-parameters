@@ -1,8 +1,8 @@
 # Varying systematics
 bandint_shift_dr6_pa4_f220:
   prior:
-    min: -10.0
-    max: 10.0
+    min: -25.0
+    max: 25.0
   ref:
     dist: norm
     loc: 0.0
