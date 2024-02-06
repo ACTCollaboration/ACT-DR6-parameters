@@ -1,6 +1,6 @@
 act_dr6_mflike.ACTDR6MFLike:
-  input_file: dr6_simu_sacc_00000.fits
-  cov_Bbl_file: final_cov_sim_and_Bbl.fits
+  input_file: dr6_simu_w_syst_sacc_00000.fits
+  cov_Bbl_file: final_cov_data_and_Bbl.fits
 
   defaults:
     symmetrize: false
