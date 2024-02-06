@@ -125,6 +125,9 @@ act_dr6_mflike.ACTDR6MFLike:
     a_s:
       value: 3.10
       latex: a_s
+    beta_s:
+      value: -2.5
+      latex: \beta_s
     a_gtt:
       value: 8.70
       latex: a_\mathrm{dust}^\mathrm{TT}
@@ -146,10 +149,25 @@ act_dr6_mflike.ACTDR6MFLike:
     T_d:
       value: 9.60
       latex: T_d
+    alpha_s:
+      value: 1.0
+      latex: \alpha_s
+    T_effd:
+      value: 19.6
+      latex: T_{\mathrm{dust},\mathrm{eff}}
+    beta_d:
+      value: 1.5
+      latex: \beta_\mathrm{dust}
+    alpha_dT:
+      value: -0.6
+      latex: \alpha_{\mathrm{dust},T}
+    alpha_dE:
+      value: -0.4
+      latex: \alpha_{\mathrm{dust},E}
+    alpha_p:
+      value: 1.0
+      latex: \alpha_p
 
-    calG_all:
-      value: 1
-      latex: \mathrm{Cal}_{\rm G}^{\rm All}
     cal_dr6_pa4_f220:
       value: 1
       latex: \mathrm{Cal}_{\rm G}^{\rm pa4 f220}
@@ -166,33 +184,18 @@ act_dr6_mflike.ACTDR6MFLike:
       value: 1
       latex: \mathrm{Cal}_{\rm G}^{\rm pa6 f150}
 
-    calT_dr6_pa4_f220:
-      value: 1
-      latex: \mathrm{Cal}_{\rm T}^{\rm pa4 f220}
     calE_dr6_pa4_f220:
       value: 1
       latex: \mathrm{Cal}_{\rm E}^{\rm pa4 f220}
-    calT_dr6_pa5_f090:
-      value: 1
-      latex: \mathrm{Cal}_{\rm T}^{\rm pa5 f090}
     calE_dr6_pa5_f090:
       value: 1
       latex: \mathrm{Cal}_{\rm E}^{\rm pa5 f090}
-    calT_dr6_pa5_f150:
-      value: 1
-      latex: \mathrm{Cal}_{\rm T}^{\rm pa5 f150}
     calE_dr6_pa5_f150:
       value: 1
       latex: \mathrm{Cal}_{\rm E}^{\rm pa5 f150}
-    calT_dr6_pa6_f090:
-      value: 1
-      latex: \mathrm{Cal}_{\rm T}^{\rm pa6 f090}
     calE_dr6_pa6_f090:
       value: 1
       latex: \mathrm{Cal}_{\rm E}^{\rm pa6 f090}
-    calT_dr6_pa6_f150:
-      value: 1
-      latex: \mathrm{Cal}_{\rm T}^{\rm pa6 f150}
     calE_dr6_pa6_f150:
       value: 1
       latex: \mathrm{Cal}_{\rm E}^{\rm pa6 f150}
@@ -212,19 +215,3 @@ act_dr6_mflike.ACTDR6MFLike:
     bandint_shift_dr6_pa6_f150:
       value: 0
       latex: \Delta_{\rm band}^{\rm pa6 f150}
-
-    alpha_dr6_pa4_f220:
-      value: 0
-      latex: \alpha^{\rm pa4 f220}
-    alpha_dr6_pa5_f090:
-      value: 0
-      latex: \alpha^{\rm pa5 f090}
-    alpha_dr6_pa5_f150:
-      value: 0
-      latex: \alpha^{\rm pa5 f150}
-    alpha_dr6_pa6_f090:
-      value: 0
-      latex: \alpha^{\rm pa6 f090}
-    alpha_dr6_pa6_f150:
-      value: 0
-      latex: \alpha^{\rm pa6 f150}
