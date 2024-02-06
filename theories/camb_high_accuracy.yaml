@@ -7,12 +7,12 @@ camb:
     nonlinear: true
     lens_potential_accuracy: 8
     lens_margin: 2050
-    AccuracyBoost: 1.0
-    lSampleBoost: 1.2
-    lAccuracyBoost: 1.0
+    AccuracyBoost: 2.0
+    lSampleBoost: 2.0
+    lAccuracyBoost: 2.0
     min_l_logl_sampling: 6000
     DoLateRadTruncation: false
-    recombination_model: CosmoRec
+    recombination_model: Recfast
 
   params:
     H0:
