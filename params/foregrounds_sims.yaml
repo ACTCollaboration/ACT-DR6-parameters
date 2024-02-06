@@ -74,7 +74,7 @@ a_s:
 beta_s:
   prior:
     min: -5.0
-    max: +5.0
+    max: 0.0
   ref:
     dist: norm
     loc: -2.5
