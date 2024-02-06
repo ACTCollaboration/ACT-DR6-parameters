@@ -71,16 +71,16 @@ a_s:
     scale: 1.0
   proposal: 0.3
   latex: a_s
-beta_r:
+beta_s:
   prior:
     min: -5.0
     max: +5.0
   ref:
     dist: norm
-    loc: 2.0
+    loc: -2.5
     scale: 0.05
   proposal: 0.015
-  latex: \beta_r
+  latex: \beta_s
 a_gtt:
   prior:
     min: -50.0
@@ -145,3 +145,21 @@ xi:
 T_d:
   value: 9.60
   latex: T_d
+alpha_s:
+  value: 1.0
+  latex: \alpha_s
+T_effd:
+  value: 19.6
+  latex: T_{\mathrm{dust},\mathrm{eff}}
+beta_d:
+  value: 1.5
+  latex: \beta_\mathrm{dust}
+alpha_dT:
+  value: -0.6
+  latex: \alpha_{\mathrm{dust},T}
+alpha_dE:
+  value: -0.4
+  latex: \alpha_{\mathrm{dust},E}
+alpha_p:
+  value: 1.0
+  latex: \alpha_p
