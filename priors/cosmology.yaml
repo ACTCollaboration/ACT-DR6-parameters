@@ -1,1 +1,1 @@
-tau_planck_prior: "lambda tau: stats.norm.logpdf(tau, loc=5.44e-2, scale=7.3e-3)"
+tau_sroll2_prior: "lambda tau: stats.norm.logpdf(tau, loc=5.66e-2, scale=5.8e-3)"
