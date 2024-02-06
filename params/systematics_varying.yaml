@@ -1,21 +1,54 @@
 # Varying systematics
-alpha_dr6_pa4_f220: 0
-alpha_dr6_pa5_f090: 0
-alpha_dr6_pa5_f150: 0
-alpha_dr6_pa6_f090: 0
-alpha_dr6_pa6_f150: 0
-
-bandint_shift_dr6_pa4_f220: 0
-bandint_shift_dr6_pa5_f090: 0
-bandint_shift_dr6_pa5_f150: 0
-bandint_shift_dr6_pa6_f090: 0
-bandint_shift_dr6_pa6_f150: 0
-
-calT_dr6_pa4_f220: 1
-calT_dr6_pa5_f090: 1
-calT_dr6_pa5_f150: 1
-calT_dr6_pa6_f090: 1
-calT_dr6_pa6_f150: 1
+bandint_shift_dr6_pa4_f220:
+  prior:
+    min: -10.0
+    max: 10.0
+  ref:
+    dist: norm
+    loc: 0.0
+    scale: 1.0
+  proposal: 0.01
+  latex: \Delta_{\rm band}^{\rm pa4 f220}
+bandint_shift_dr6_pa5_f090:
+  prior:
+    min: -10.0
+    max: 10.0
+  ref:
+    dist: norm
+    loc: 0.0
+    scale: 1.0
+  proposal: 0.01
+  latex: \Delta_{\rm band}^{\rm pa5 f090}
+bandint_shift_dr6_pa5_f150:
+  prior:
+    min: -10.0
+    max: 10.0
+  ref:
+    dist: norm
+    loc: 0.0
+    scale: 1.0
+  proposal: 0.01
+  latex: \Delta_{\rm band}^{\rm pa5 f150}
+bandint_shift_dr6_pa6_f090:
+  prior:
+    min: -10.0
+    max: 10.0
+  ref:
+    dist: norm
+    loc: 0.0
+    scale: 1.0
+  proposal: 0.01
+  latex: \Delta_{\rm band}^{\rm pa6 f090}
+bandint_shift_dr6_pa6_f150:
+  prior:
+    min: -10.0
+    max: 10.0
+  ref:
+    dist: norm
+    loc: 0.0
+    scale: 1.0
+  proposal: 0.01
+  latex: \Delta_{\rm band}^{\rm pa6 f150}
 
 calE_dr6_pa4_f220:
   prior:
@@ -25,6 +58,7 @@ calE_dr6_pa4_f220:
     dist: norm
     loc: 1.0
     scale: 0.02
+  proposal: 0.01
   latex: \mathrm{Cal}_{\rm E}^{\rm pa4 f220}
 calE_dr6_pa5_f090:
   prior:
@@ -34,6 +68,7 @@ calE_dr6_pa5_f090:
     dist: norm
     loc: 1.0
     scale: 0.02
+  proposal: 0.01
   latex: \mathrm{Cal}_{\rm E}^{\rm pa5 f090}
 calE_dr6_pa5_f150:
   prior:
@@ -43,6 +78,7 @@ calE_dr6_pa5_f150:
     dist: norm
     loc: 1.0
     scale: 0.02
+  proposal: 0.01
   latex: \mathrm{Cal}_{\rm E}^{\rm pa5 f150}
 calE_dr6_pa6_f090:
   prior:
@@ -52,6 +88,7 @@ calE_dr6_pa6_f090:
     dist: norm
     loc: 1.0
     scale: 0.02
+  proposal: 0.01
   latex: \mathrm{Cal}_{\rm E}^{\rm pa6 f090}
 calE_dr6_pa6_f150:
   prior:
@@ -61,57 +98,56 @@ calE_dr6_pa6_f150:
     dist: norm
     loc: 1.0
     scale: 0.02
+  proposal: 0.01
   latex: \mathrm{Cal}_{\rm E}^{\rm pa6 f150}
 
 cal_dr6_pa4_f220:
   prior:
-    dist: norm
-    loc: 1.0
-    scale: 0.013
+    min: 0.9
+    max: 1.1
   ref:
     dist: norm
     loc: 1.0
     scale: 0.01
+  proposal: 1e-2
   latex: \mathrm{Cal}_{\rm G}^{\rm pa4 f220}
 cal_dr6_pa5_f090:
   prior:
-    dist: norm
-    loc: 1.0
-    scale: 0.0016
+    min: 0.9
+    max: 1.1
   ref:
     dist: norm
     loc: 1.0
     scale: 0.01
+  proposal: 1e-3
   latex: \mathrm{Cal}_{\rm G}^{\rm pa5 f090}
 cal_dr6_pa5_f150:
   prior:
-    dist: norm
-    loc: 1.0
-    scale: 0.0020
+    min: 0.9
+    max: 1.1
   ref:
     dist: norm
     loc: 1.0
     scale: 0.01
+  proposal: 1e-3
   latex: \mathrm{Cal}_{\rm G}^{\rm pa5 f150}
 cal_dr6_pa6_f090:
   prior:
-    dist: norm
-    loc: 1.0
-    scale: 0.0018
+    min: 0.9
+    max: 1.1
   ref:
     dist: norm
     loc: 1.0
     scale: 0.01
+  proposal: 1e-3
   latex: \mathrm{Cal}_{\rm G}^{\rm pa6 f090}
 cal_dr6_pa6_f150:
   prior:
-    dist: norm
-    loc: 1.0
-    scale: 0.0024
+    min: 0.9
+    max: 1.1
   ref:
     dist: norm
     loc: 1.0
     scale: 0.01
+  proposal: 1e-3
   latex: \mathrm{Cal}_{\rm G}^{\rm pa6 f150}
-
-calG_all: 1
