@@ -203,16 +203,16 @@ act_dr6_mflike.ACTDR6MFLike:
 
     bandint_shift_dr6_pa4_f220:
       value: 0
-      latex: \Delta_{\rm band}^{\rm pa4 f220}
+      latex: \Delta_{\rm band, pa4}^{\rm f220}
     bandint_shift_dr6_pa5_f090:
       value: 0
-      latex: \Delta_{\rm band}^{\rm pa5 f090}
+      latex: \Delta_{\rm band, pa5}^{\rm f090}
     bandint_shift_dr6_pa5_f150:
       value: 0
-      latex: \Delta_{\rm band}^{\rm pa5 f150}
+      latex: \Delta_{\rm band, pa5}^{\rm f150}
     bandint_shift_dr6_pa6_f090:
       value: 0
-      latex: \Delta_{\rm band}^{\rm pa6 f090}
+      latex: \Delta_{\rm band, pa6}^{\rm f090}
     bandint_shift_dr6_pa6_f150:
       value: 0
-      latex: \Delta_{\rm band}^{\rm pa6 f150}
+      latex: \Delta_{\rm band, pa6}^{\rm f150}

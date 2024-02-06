@@ -8,7 +8,7 @@ bandint_shift_dr6_pa4_f220:
     loc: 0.0
     scale: 1.0
   proposal: 0.01
-  latex: \Delta_{\rm band}^{\rm pa4 f220}
+  latex: \Delta_{\rm band, pa4}^{\rm f220}
 bandint_shift_dr6_pa5_f090:
   prior:
     min: -10.0
@@ -18,7 +18,7 @@ bandint_shift_dr6_pa5_f090:
     loc: 0.0
     scale: 1.0
   proposal: 0.01
-  latex: \Delta_{\rm band}^{\rm pa5 f090}
+  latex: \Delta_{\rm band, pa5}^{\rm f090}
 bandint_shift_dr6_pa5_f150:
   prior:
     min: -10.0
@@ -28,7 +28,7 @@ bandint_shift_dr6_pa5_f150:
     loc: 0.0
     scale: 1.0
   proposal: 0.01
-  latex: \Delta_{\rm band}^{\rm pa5 f150}
+  latex: \Delta_{\rm band, pa5}^{\rm f150}
 bandint_shift_dr6_pa6_f090:
   prior:
     min: -10.0
@@ -38,7 +38,7 @@ bandint_shift_dr6_pa6_f090:
     loc: 0.0
     scale: 1.0
   proposal: 0.01
-  latex: \Delta_{\rm band}^{\rm pa6 f090}
+  latex: \Delta_{\rm band, pa6}^{\rm f090}
 bandint_shift_dr6_pa6_f150:
   prior:
     min: -10.0
@@ -48,9 +48,10 @@ bandint_shift_dr6_pa6_f150:
     loc: 0.0
     scale: 1.0
   proposal: 0.01
-  latex: \Delta_{\rm band}^{\rm pa6 f150}
+  latex: \Delta_{\rm band, pa6}^{\rm f150}
 
 calE_dr6_pa4_f220:
+  # We do not use the polarization channel of PA4, so we don't vary this parameter.
   value: 1.0
   latex: \mathrm{p}_{\rm pa4}^{\rm f220}
 calE_dr6_pa5_f090:
