@@ -1,19 +1,16 @@
 # Fixed systematics
-bandint_shift_dr6_pa4_f150: 0
 bandint_shift_dr6_pa4_f220: 0
 bandint_shift_dr6_pa5_f090: 0
 bandint_shift_dr6_pa5_f150: 0
 bandint_shift_dr6_pa6_f090: 0
 bandint_shift_dr6_pa6_f150: 0
 
-calE_dr6_pa4_f150: 1
 calE_dr6_pa4_f220: 1
 calE_dr6_pa5_f090: 1
 calE_dr6_pa5_f150: 1
 calE_dr6_pa6_f090: 1
 calE_dr6_pa6_f150: 1
 
-cal_dr6_pa4_f150: 1
 cal_dr6_pa4_f220: 1
 cal_dr6_pa5_f090: 1
 cal_dr6_pa5_f150: 1

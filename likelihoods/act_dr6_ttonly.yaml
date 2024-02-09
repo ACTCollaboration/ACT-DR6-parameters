@@ -6,33 +6,13 @@ act_dr6_mflike.ACTDR6MFLike:
   defaults:
     symmetrize: false
     polarizations: [TT, TE, ET, EE]
-    polarizations_auto: &polarizations_auto [TT, TE, EE]
+    polarizations_auto: &polarizations_auto [TT]
     lmax: &lmax 8500
     scales:
       TT: [2, *lmax]
       TE: [2, *lmax]
       ET: [2, *lmax]
       EE: [2, *lmax]
-
-  foregrounds:
-    normalisation:
-      nu_0: 150.0
-      ell_0: 3000
-      T_CMB: 2.725
-
-    components:
-      tt:
-        - kSZ
-        - tSZ_and_CIB
-        - cibp
-        - dust
-        - radio
-      te:
-        - radio
-        - dust
-      ee:
-        - radio
-        - dust
 
   data:
     experiments:
@@ -44,85 +24,69 @@ act_dr6_mflike.ACTDR6MFLike:
 
     spectra:
       - experiments: [dr6_pa4_f220, dr6_pa4_f220]
-        polarizations: &pol_pa4_f220 [TT]
-        scales: &scales_pa4
-          TT: [1000, *lmax]
-      - experiments: [dr6_pa4_f220, dr6_pa5_f090]
-        polarizations: *pol_pa4_f220
-        scales: *scales_pa4
-      - experiments: [dr6_pa4_f220, dr6_pa5_f150]
-        polarizations: *pol_pa4_f220
-        scales: *scales_pa4
-      - experiments: [dr6_pa4_f220, dr6_pa6_f090]
-        polarizations: *pol_pa4_f220
-        scales: *scales_pa4
-      - experiments: [dr6_pa4_f220, dr6_pa6_f150]
-        polarizations: *pol_pa4_f220
-        scales: *scales_pa4
-
-      - experiments: [dr6_pa5_f090, dr6_pa5_f090]
         polarizations: *polarizations_auto
         scales:
           TT: [1000, *lmax]
-          TE: [1000, *lmax]
-          EE: [500, *lmax]
+      - experiments: [dr6_pa4_f220, dr6_pa5_f090]
+        polarizations: *polarizations_auto
+        scales:
+          TT: [1000, *lmax]
+      - experiments: [dr6_pa4_f220, dr6_pa5_f150]
+        polarizations: *polarizations_auto
+        scales:
+          TT: [1000, *lmax]
+      - experiments: [dr6_pa4_f220, dr6_pa6_f090]
+        polarizations: *polarizations_auto
+        scales:
+          TT: [1000, *lmax]
+      - experiments: [dr6_pa4_f220, dr6_pa6_f150]
+        polarizations: *polarizations_auto
+        scales:
+          TT: [1000, *lmax]
+
+      - experiments: [dr6_pa5_f090, dr6_pa5_f090]
+        polarizations: *polarizations_auto
+        scales: &scales_pa5_f090
+          TT: [1000, *lmax]
       - experiments: [dr6_pa5_f090, dr6_pa5_f150]
+        polarizations: *polarizations_auto
         scales:
           TT: [1000, *lmax]
-          TE: [1000, *lmax]
-          ET: [800, *lmax]
-          EE: [500, *lmax]
       - experiments: [dr6_pa5_f090, dr6_pa6_f090]
+        polarizations: *polarizations_auto
         scales:
           TT: [1000, *lmax]
-          TE: [1000, *lmax]
-          ET: [1000, *lmax]
-          EE: [500, *lmax]
       - experiments: [dr6_pa5_f090, dr6_pa6_f150]
+        polarizations: *polarizations_auto
         scales:
           TT: [1000, *lmax]
-          TE: [1000, *lmax]
-          ET: [600, *lmax]
-          EE: [500, *lmax]
 
       - experiments: [dr6_pa5_f150, dr6_pa5_f150]
         polarizations: *polarizations_auto
         scales:
           TT: [800, *lmax]
-          TE: [800, *lmax]
-          EE: [500, *lmax]
       - experiments: [dr6_pa5_f150, dr6_pa6_f090]
+        polarizations: *polarizations_auto
         scales:
           TT: [1000, *lmax]
-          TE: [800, *lmax]
-          ET: [1000, *lmax]
-          EE: [500, *lmax]
       - experiments: [dr6_pa5_f150, dr6_pa6_f150]
+        polarizations: *polarizations_auto
         scales:
           TT: [800, *lmax]
-          TE: [800, *lmax]
-          ET: [600, *lmax]
-          EE: [500, *lmax]
 
       - experiments: [dr6_pa6_f090, dr6_pa6_f090]
         polarizations: *polarizations_auto
         scales:
           TT: [1000, *lmax]
-          TE: [1000, *lmax]
-          EE: [500, *lmax]
       - experiments: [dr6_pa6_f090, dr6_pa6_f150]
+        polarizations: *polarizations_auto
         scales:
           TT: [1000, *lmax]
-          TE: [1000, *lmax]
-          ET: [600, *lmax]
-          EE: [500, *lmax]
 
       - experiments: [dr6_pa6_f150, dr6_pa6_f150]
         polarizations: *polarizations_auto
         scales:
           TT: [600, *lmax]
-          TE: [600, *lmax]
-          EE: [500, *lmax]
 
   params:
     a_tSZ:
