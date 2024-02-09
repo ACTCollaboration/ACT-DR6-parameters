@@ -50,6 +50,17 @@ bandint_shift_dr6_pa6_f150:
   proposal: 0.01
   latex: \Delta_{\rm band, pa6}^{\rm f150}
 
+calG_all:
+  prior:
+    min: 0.9
+    max: 1.1
+  ref:
+    dist: norm
+    loc: 1.0
+    scale: 0.01
+  proposal: 0.003
+  latex: \mathrm{cal}_{\rm ACT}
+
 calE_dr6_pa4_f220:
   # We do not use the polarization channel of PA4, so we don't vary this parameter.
   value: 1.0
