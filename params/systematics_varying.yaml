@@ -6,7 +6,7 @@ bandint_shift_dr6_pa4_f220:
   ref:
     dist: norm
     loc: 0.0
-    scale: 5.0
+    scale: 2.0
   proposal: 1.0
   latex: \Delta_{\rm band, pa4}^{\rm f220}
 bandint_shift_dr6_pa5_f090:
@@ -16,7 +16,7 @@ bandint_shift_dr6_pa5_f090:
   ref:
     dist: norm
     loc: 0.0
-    scale: 2.0
+    scale: 1.0
   proposal: 0.5
   latex: \Delta_{\rm band, pa5}^{\rm f090}
 bandint_shift_dr6_pa5_f150:
@@ -26,7 +26,7 @@ bandint_shift_dr6_pa5_f150:
   ref:
     dist: norm
     loc: 0.0
-    scale: 2.0
+    scale: 1.0
   proposal: 0.5
   latex: \Delta_{\rm band, pa5}^{\rm f150}
 bandint_shift_dr6_pa6_f090:
@@ -36,7 +36,7 @@ bandint_shift_dr6_pa6_f090:
   ref:
     dist: norm
     loc: 0.0
-    scale: 2.0
+    scale: 1.0
   proposal: 0.5
   latex: \Delta_{\rm band, pa6}^{\rm f090}
 bandint_shift_dr6_pa6_f150:
@@ -46,7 +46,7 @@ bandint_shift_dr6_pa6_f150:
   ref:
     dist: norm
     loc: 0.0
-    scale: 2.0
+    scale: 1.0
   proposal: 0.5
   latex: \Delta_{\rm band, pa6}^{\rm f150}
 

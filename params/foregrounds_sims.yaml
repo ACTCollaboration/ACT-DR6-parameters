@@ -87,9 +87,9 @@ a_gtt:
     max: +50.0
   ref:
     dist: norm
-    loc: 8.0
-    scale: 0.7
-  proposal: 0.4
+    loc: 8.8
+    scale: 0.5
+  proposal: 0.3
   latex: a_\mathrm{dust}^\mathrm{TT}
 a_gte:
   prior:
@@ -97,8 +97,8 @@ a_gte:
     max: +1.0
   ref:
     dist: norm
-    loc: 0.1
-    scale: 0.1
+    loc: 0.4
+    scale: 0.05
   proposal: 0.03
   latex: a_\mathrm{dust}^\mathrm{TE}
 a_gee:
@@ -107,16 +107,16 @@ a_gee:
     max: +1.0
   ref:
     dist: norm
-    loc: 0.1
-    scale: 0.1
-  proposal: 0.03
+    loc: 0.17
+    scale: 0.03
+  proposal: 0.01
   latex: a_\mathrm{dust}^\mathrm{EE}
 a_psee:
   prior:
     min: -1.0
     max: +1.0
   ref:
-    dist: halfnorm
+    dist: norm
     loc: 0.0
     scale: 0.04
   proposal: 0.05
