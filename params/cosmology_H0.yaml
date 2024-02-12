@@ -32,6 +32,9 @@ H0:
     scale: 1.04
   proposal: 0.54
   latex: H_0
+h:
+  value: "lambda H0: H0 / 100.0"
+  latex: h
 logA:
   prior:
     min: 2.6
