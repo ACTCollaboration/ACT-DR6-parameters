@@ -8,4 +8,4 @@ nnu:
     loc: 2.92
     scale: 0.72
   proposal: 0.36
-  label: N_\mathrm{eff}
+  latex: N_\mathrm{eff}
