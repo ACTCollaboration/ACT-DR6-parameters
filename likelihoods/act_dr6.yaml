@@ -189,10 +189,6 @@ act_dr6_mflike.ACTDR6MFLike:
       value: 1.0
       latex: \alpha_p
 
-    calG_all:
-      value: 1
-      latex: \mathrm{cal}_{\rm ACT}
-
     cal_dr6_pa4_f220:
       value: 1
       latex: \mathrm{c}_{\rm pa4}^{\rm f220}

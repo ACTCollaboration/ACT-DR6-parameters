@@ -1,0 +1,3 @@
+# The sims were generated with the Planck value for tau, so we need to recentre the
+# tau prior (using sroll2 prior will bias tau/As).
+tau_sim_prior: "lambda tau: stats.norm.logpdf(tau, loc=5.44e-2, scale=5.8e-3)"
