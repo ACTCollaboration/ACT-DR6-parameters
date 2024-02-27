@@ -35,6 +35,7 @@ H0:
 h:
   value: "lambda H0: H0 / 100.0"
   latex: h
+  derived: true
 logA:
   prior:
     min: 2.6

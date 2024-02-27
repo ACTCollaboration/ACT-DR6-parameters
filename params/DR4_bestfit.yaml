@@ -23,6 +23,7 @@ logA:
 As:
   value: "lambda logA: 1e-10 * np.exp(logA)"
   latex: A_s
+  derived: true
 
 # FOREGROUNDS (table 7 of Choi et al.)
 a_tSZ:
