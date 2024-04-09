@@ -47,3 +47,6 @@ camb:
     zdrag:
       latex: z_d
       derived: true
+    rdrag:
+      latex: r_d
+      derived: true
