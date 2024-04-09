@@ -1,0 +1,1 @@
+tau_sroll2_prior: "lambda tau: stats.norm.logpdf(tau, loc=5.66e-2, scale=5.8e-3)"

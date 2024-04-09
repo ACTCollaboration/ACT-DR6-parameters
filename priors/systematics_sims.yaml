@@ -1,0 +1,14 @@
+# External priors for the calibration parameters FOR THE SIMULATED DATA VECTOR.
+calG_all_prior: "lambda calG_all: stats.norm.logpdf(calG_all, loc=1.0, scale=0.003)"
+
+cal_dr6_pa4_f220_prior: "lambda cal_dr6_pa4_f220: stats.norm.logpdf(cal_dr6_pa4_f220, loc=1.0, scale=0.013)"
+cal_dr6_pa5_f090_prior: "lambda cal_dr6_pa5_f090: stats.norm.logpdf(cal_dr6_pa5_f090, loc=1.0, scale=0.0016)"
+cal_dr6_pa5_f150_prior: "lambda cal_dr6_pa5_f150: stats.norm.logpdf(cal_dr6_pa5_f150, loc=1.0, scale=0.0020)"
+cal_dr6_pa6_f090_prior: "lambda cal_dr6_pa6_f090: stats.norm.logpdf(cal_dr6_pa6_f090, loc=1.0, scale=0.0018)"
+cal_dr6_pa6_f150_prior: "lambda cal_dr6_pa6_f150: stats.norm.logpdf(cal_dr6_pa6_f150, loc=1.0, scale=0.0024)"
+
+bandint_shift_dr6_pa4_f220_prior: "lambda bandint_shift_dr6_pa4_f220: stats.norm.logpdf(bandint_shift_dr6_pa4_f220, loc=0.0, scale=3.6)"
+bandint_shift_dr6_pa5_f090_prior: "lambda bandint_shift_dr6_pa5_f090: stats.norm.logpdf(bandint_shift_dr6_pa5_f090, loc=0.0, scale=1.0)"
+bandint_shift_dr6_pa5_f150_prior: "lambda bandint_shift_dr6_pa5_f150: stats.norm.logpdf(bandint_shift_dr6_pa5_f150, loc=0.0, scale=1.3)"
+bandint_shift_dr6_pa6_f090_prior: "lambda bandint_shift_dr6_pa6_f090: stats.norm.logpdf(bandint_shift_dr6_pa6_f090, loc=0.0, scale=1.2)"
+bandint_shift_dr6_pa6_f150_prior: "lambda bandint_shift_dr6_pa6_f150: stats.norm.logpdf(bandint_shift_dr6_pa6_f150, loc=0.0, scale=1.1)"

@@ -1,5 +1,0 @@
-act_dr6_mflike.ACTDR6MFLike:
-  input_file: act_simu_sacc_00000.fits
-  cov_Bbl_file: act_simu_sacc_cov.fits
-
-  stop_at_error: true

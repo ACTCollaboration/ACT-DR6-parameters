@@ -10,12 +10,12 @@ camb:
     lAccuracyBoost: 1.2
     min_l_logl_sampling: 6000
     DoLateRadTruncation: false
-    recombination_model: CosmoRec
+    recombination_model: Cosmorec
 
   params:
     H0:
       latex: H_0
-      derived: True
+      derived: true
     thetastar:
       latex: \theta_\star
       derived: true
@@ -44,4 +44,7 @@ camb:
     # rastar (conformal angular diameter distance to photon optical depth unity)
     zdrag:
       latex: z_d
+      derived: true
+    rdrag:
+      latex: r_d
       derived: true
