@@ -7,17 +7,15 @@ camb:
     nonlinear: true
     lens_potential_accuracy: 8
     lens_margin: 2050
-    AccuracyBoost: 1.0
-    lSampleBoost: 1.0
     lAccuracyBoost: 1.2
     min_l_logl_sampling: 6000
     DoLateRadTruncation: false
-    recombination_model: Recfast
+    recombination_model: Cosmorec
 
   params:
     H0:
       latex: H_0
-      derived: True
+      derived: true
     thetastar:
       latex: \theta_\star
       derived: true
