@@ -1,12 +1,12 @@
 debug: false
 force: false
 
-output: chains/dr6-cosmopower
+output: chains/dr6-cosmopower-lcdm
 
 sampler:
   mcmc:
 
 theory: !defaults [../theories/cosmopower]
 likelihood: !defaults [../likelihoods/act_dr6]
-params: !defaults [../params/cosmology_H0, ../params/foregrounds_Choi2020, ../params/systematics_fixed]
-prior: !defaults [../priors/foregrounds_Choi2020, ../priors/cosmology]
+params: !defaults [../params/cosmology_H0, ../params/foregrounds, ../params/systematics_fixed]
+prior: !defaults [../priors/foregrounds, ../priors/cosmology]
