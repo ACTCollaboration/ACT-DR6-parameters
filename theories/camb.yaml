@@ -10,7 +10,7 @@ camb:
     lAccuracyBoost: 1.2
     min_l_logl_sampling: 6000
     DoLateRadTruncation: false
-    recombination_model: Cosmorec
+    recombination_model: CosmoRec
 
   params:
     H0:
