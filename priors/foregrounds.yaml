@@ -1,0 +1,10 @@
+# External priors. I.e. priors inferred from different observations instead of
+# physical limits. The phyiscal priors impose physical limits (i.e. tau > 0.0),
+# whereas the external priors impose extra information from external analyses
+# (i.e. tau constraints from planck lowE measurements).
+
+# These dust priors come from Thibaut+Xavier's post on 30 Jan 2024. They are the
+# mean +/- 2 sigma of their measured dust amplitude.
+TTdust_prior: "lambda a_gtt: stats.norm.logpdf(a_gtt, loc=7.95, scale=0.32)"
+TEdust_prior: "lambda a_gte: stats.norm.logpdf(a_gte, loc=0.423, scale=0.03)"
+EEdust_prior: "lambda a_gee: stats.norm.logpdf(a_gee, loc=0.1681, scale=0.017)"

@@ -25,13 +25,17 @@ If you want to add new files, please consider the following style guides:
 
 ## Notes on existing files
 
-`theories/camb_high_accuracy.yaml` uses the high accuracy settings for CAMB at least as accurate as in [Hill et al. (2020)](https://arxiv.org/abs/2109.04451). Note that we intend to use `cosmorec` instead of `recfast` as main recombination code - see the section _Installing Cosmorec_ below for instructions.
+`theories/camb.yaml` uses the high accuracy settings for CAMB at least as accurate as in [Hill et al. (2020)](https://arxiv.org/abs/2109.04451). Note that we intend to use `cosmorec` instead of `recfast` as main recombination code - see the section _Installing Cosmorec_ below for instructions.
 
 `theories/cosmopower.yaml` uses [Cosmopower](https://arxiv.org/abs/2106.03846) as implemented in the _Simons Observatory_ package [SOLikeT](https://github.com/simonsobs/SOLikeT). See the section _Setting up CosmoPower_ on instructions of setting this up.
 
+`params/foregrounds.yaml` uses the baseline foreground model implemented in MFLike based on the [Choi et al. (2020)](https://arxiv.org/abs/2007.07289) foreground model but with modifications for DR6. The corresponding foreground priors are found in `priors/foregrounds.yaml`.
+
 `params/foregrounds_Choi2020.yaml` uses the foreground model implemented in MFLike based on the [Choi et al. (2020)](https://arxiv.org/abs/2007.07289) foreground model. The corresponding foreground priors are found in `priors/foregrounds_Choi2020.yaml`.
 
-`params_foreground_sims.yaml` uses a model similar to the expected the DR6 foreground model, but allows parameters to go outside physical constraints (i.e. negative for values that are expected to be non-negative). **UPDATE FEB 2024** We will loosen the restriction that the CIB spectral indices are equal (e.g. we now let `beta_c` and `beta_p` vary independently), and we add a varying spectral index for the radio sources `beta_r`.
+`params/foreground_sims.yaml` uses a model similar to the expected the DR6 foreground model, but allows parameters to go outside physical constraints (i.e. negative for values that are expected to be non-negative). **UPDATE FEB 2024** We will loosen the restriction that the CIB spectral indices are equal (e.g. we now let `beta_c` and `beta_p` vary independently), and we add a varying spectral index for the radio sources `beta_r`.
+
+`params/systematics.yaml` uses the systematics parameters for DR6.
 
 `params_DR4_baseline.yaml` is a simple set of fixed parameters that can be used to evaluate your model at the *ACT DR4+WMAP baseline* parameters found in Choi et al. and Aiola et al.
 

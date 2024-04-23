@@ -22,54 +22,63 @@ act_dr6_mflike.ACTDR6MFLike:
 
     spectra:
       - experiments: [dr6_pa5_f090, dr6_pa5_f090]
-        polarizations: [TE]
+        polarizations: [TE, EE]
         scales:
           TE: [1000, *lmax]
+          EE: [500, *lmax]
       - experiments: [dr6_pa5_f090, dr6_pa5_f150]
-        polarizations: [TE, ET]
+        polarizations: [TE, ET, EE]
         scales:
           TE: [1000, *lmax]
           ET: [800, *lmax]
+          EE: [500, *lmax]
       - experiments: [dr6_pa5_f090, dr6_pa6_f090]
-        polarizations: [TE, ET]
+        polarizations: [TE, ET, EE]
         scales:
           TE: [1000, *lmax]
           ET: [1000, *lmax]
+          EE: [500, *lmax]
       - experiments: [dr6_pa5_f090, dr6_pa6_f150]
-        polarizations: [TE, ET]
+        polarizations: [TE, ET, EE]
         scales:
           TE: [1000, *lmax]
           ET: [600, *lmax]
+          EE: [500, *lmax]
 
       - experiments: [dr6_pa5_f150, dr6_pa5_f150]
-        polarizations: [TE]
+        polarizations: [TE, EE]
         scales:
           TE: [800, *lmax]
+          EE: [500, *lmax]
       - experiments: [dr6_pa5_f150, dr6_pa6_f090]
-        polarizations: [TE, ET]
+        polarizations: [TE, ET, EE]
         scales:
           TE: [800, *lmax]
           ET: [1000, *lmax]
       - experiments: [dr6_pa5_f150, dr6_pa6_f150]
-        polarizations: [TE, ET]
+        polarizations: [TE, ET, EE]
         scales:
           TE: [800, *lmax]
           ET: [600, *lmax]
+          EE: [500, *lmax]
 
       - experiments: [dr6_pa6_f090, dr6_pa6_f090]
-        polarizations: [TE]
+        polarizations: [TE, EE]
         scales:
           TE: [1000, *lmax]
+          EE: [500, *lmax]
       - experiments: [dr6_pa6_f090, dr6_pa6_f150]
-        polarizations: [TE, ET]
+        polarizations: [TE, ET, EE]
         scales:
           TE: [1000, *lmax]
           ET: [600, *lmax]
+          EE: [500, *lmax]
 
       - experiments: [dr6_pa6_f150, dr6_pa6_f150]
-        polarizations: [TE]
+        polarizations: [TE, EE]
         scales:
           TE: [600, *lmax]
+          EE: [500, *lmax]
 
   params:
     a_tSZ:
