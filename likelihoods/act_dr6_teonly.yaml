@@ -135,6 +135,9 @@ act_dr6_mflike.ACTDR6MFLike:
     alpha_p:
       value: 1.0
       latex: \alpha_p
+    alpha_tSZ:
+      value: 0.0
+      latex: \alpha_{\rm tSZ}
 
     cal_dr6_pa4_f220:
       value: 1
