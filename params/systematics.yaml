@@ -156,3 +156,133 @@ cal_dr6_pa6_f150:
     scale: 0.01
   proposal: 1e-3
   latex: \mathrm{c}_{\rm pa6}^{\rm f150}
+
+lknee_deltaT:
+  prior:
+    min: 0.0
+    max: 8500.0
+  ref:
+    dist: norm
+    loc: 3000.0
+    scale: 1000.0
+  proposal: 100
+  latex: \ell_{\rm knee}^{\delta T}
+lknee_gamma:
+  prior:
+    min: 0.0
+    max: 8500.0
+  ref:
+    dist: norm
+    loc: 3000.0
+    scale: 1000.0
+  proposal: 100
+  latex: \ell_{\rm knee}^{\gamma}
+lknee_deltaE:
+  prior:
+    min: 0.0
+    max: 8500.0
+  ref:
+    dist: norm
+    loc: 3000.0
+    scale: 1000.0
+  proposal: 100
+  latex: \ell_{\rm knee}^{\delta E}
+
+m_deltaT_0:
+  prior:
+    dist: norm
+    loc: 0.0
+    scale: 0.0001
+  proposal: 0.000001
+  latex: m_{\rm 0}^{\delta T}
+m_gamma_0:
+  prior:
+    dist: norm
+    loc: 0.0
+    scale: 0.0001
+  proposal: 0.000001
+  latex: m_{\rm 0}^{\gamma}
+m_deltaE_0:
+  prior:
+    dist: norm
+    loc: 0.0
+    scale: 0.0001
+  proposal: 0.000001
+  latex: m_{\rm 0}^{\delta E}
+
+m_deltaT_1:
+  prior:
+    dist: norm
+    loc: 0.0
+    scale: 0.0001
+  proposal: 0.000001
+  latex: m_{\rm 1}^{\delta T}
+m_gamma_1:
+  prior:
+    dist: norm
+    loc: 0.0
+    scale: 0.0001
+  proposal: 0.000001
+  latex: m_{\rm 1}^{\gamma}
+m_deltaE_1:
+  prior:
+    dist: norm
+    loc: 0.0
+    scale: 0.0001
+  proposal: 0.000001
+  latex: m_{\rm 1}^{\delta E}
+
+m_deltaT_2:
+  prior:
+    dist: norm
+    loc: 0.0
+    scale: 0.0001
+  proposal: 0.000001
+  latex: m_{\rm 2}^{\delta T}
+m_gamma_2:
+  prior:
+    dist: norm
+    loc: 0.0
+    scale: 0.0001
+  proposal: 0.000001
+  latex: m_{\rm 2}^{\gamma}
+m_deltaE_2:
+  prior:
+    dist: norm
+    loc: 0.0
+    scale: 0.0001
+  proposal: 0.000001
+  latex: m_{\rm 2}^{\delta E}
+
+m_deltaT_3:
+  prior:
+    dist: norm
+    loc: 0.0
+    scale: 0.0001
+  proposal: 0.000001
+  latex: m_{\rm 3}^{\delta T}
+
+# only vary b_gamma since the others are degenerate with cals
+b_gamma_0:
+  prior:
+    dist: norm
+    loc: 0.0
+    scale: 0.1
+  proposal: 0.001
+  latex: b_{\rm 0}^{\gamma}
+
+b_gamma_1:
+  prior:
+    dist: norm
+    loc: 0.0
+    scale: 0.1
+  proposal: 0.001
+  latex: b_{\rm 1}^{\gamma}
+
+b_gamma_2:
+  prior:
+    dist: norm
+    loc: 0.0
+    scale: 0.1
+  proposal: 0.001
+  latex: b_{\rm 2}^{\gamma}
