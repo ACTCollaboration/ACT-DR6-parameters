@@ -133,6 +133,10 @@ act_dr6_mflike.ACTDR6MFLike:
       value: 0.0
       latex: \alpha_{\rm tSZ}
 
+    calG_all:
+      value: 1
+      latex: \mathrm{A}_{\rm Planck}
+
     cal_dr6_pa4_f220:
       value: 1
       latex: \mathrm{c}_{\rm pa4}^{\rm f220}
