@@ -101,5 +101,4 @@ act_dr6_mflike.ACTDR6MFLike:
         scales:
           TT: [600, *lmax]
           TE: [600, *lmax]
-          EE: [600, *lmax]
-      
+          EE: [600, *lmax] 

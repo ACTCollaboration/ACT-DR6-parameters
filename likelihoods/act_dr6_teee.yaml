@@ -79,4 +79,3 @@ act_dr6_mflike.ACTDR6MFLike:
         scales:
           TE: [600, *lmax]
           EE: [500, *lmax]
-

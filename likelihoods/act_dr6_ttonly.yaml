@@ -85,4 +85,3 @@ act_dr6_mflike.ACTDR6MFLike:
         polarizations: [TT]
         scales:
           TT: [600, *lmax]
-
