@@ -1,0 +1,7 @@
+# N_ur range, needed by cosmopower networks
+N_ur:
+  prior:
+    min: 1
+    max: 4
+  proposal: 0.03
+  latex: N_\mathrm{ur}
