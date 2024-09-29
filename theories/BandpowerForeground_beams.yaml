@@ -1,25 +1,25 @@
 mflike.BandpowerForeground:
-  
-  # reading beams from sacc file  
-  beam_profile:
-    beam_from_file: 
 
-  top_hat_band:
-  
+  # reading beams from sacc file
+  beam_profile:
+    beam_from_file: null
+
+  top_hat_band: null
+
   normalisation:
     nu_0: 150.0
     ell_0: 3000
     T_CMB: 2.725
-  
-  experiments: 
+
+  experiments:
     - dr6_pa4_f220
     - dr6_pa5_f090
     - dr6_pa5_f150
     - dr6_pa6_f090
     - dr6_pa6_f150
-  
+
   bandint_freqs: [220, 90, 150, 90, 150]
-  
+
   components:
     tt:
       - kSZ

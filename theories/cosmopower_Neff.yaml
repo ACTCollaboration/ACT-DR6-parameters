@@ -63,7 +63,7 @@ soliket.CosmoPowerDerived:
       derived: true
     Neff:
       latex: N_\mathrm{eff}
-      derived: True
+      derived: true
     YHe:
       latex: Y_\mathrm{He}
       derived: true
