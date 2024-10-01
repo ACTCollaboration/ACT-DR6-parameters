@@ -1,0 +1,12 @@
+debug: false
+force: false
+
+output: chains/dr6-cosmopower-lcdm-Neff
+
+sampler:
+  mcmc:
+
+theory: !defaults [../theories/cosmopower_Neff, ../theories/BandpowerForeground]
+likelihood: !defaults [../likelihoods/act_dr6]
+params: !defaults [../params/cosmology_H0, ../params/cosmology_Nur, ../params/foregrounds, ../params/systematics]
+prior: !defaults [../priors/foregrounds, ../priors/cosmology, ../priors/systematics]

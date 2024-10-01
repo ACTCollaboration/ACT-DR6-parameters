@@ -1,5 +1,5 @@
-debug: False
-force: False
+debug: false
+force: false
 
 output: chains/dr6-wmap-sroll2-camb-lcdm
 

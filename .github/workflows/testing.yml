@@ -17,6 +17,8 @@ jobs:
           config_data: |
             extends: default
             rules:
+              document-start:
+                present: false
               line-length:
                 max: 100
                 level: warning

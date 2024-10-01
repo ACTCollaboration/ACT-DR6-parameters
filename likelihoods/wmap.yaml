@@ -1,5 +1,5 @@
 wmaplike.WMAPLike:
-  stop_at_error: True
+  stop_at_error: true
   temin: 24
   params:
     A_sz:

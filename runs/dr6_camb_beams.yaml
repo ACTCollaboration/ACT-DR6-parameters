@@ -1,12 +1,12 @@
 debug: false
 force: false
 
-output: chains/dr6-camb-lcdm
+output: chains/dr6-camb-lcdm-beam-chromaticity
 
 sampler:
   mcmc:
 
-theory: !defaults [../theories/camb, ../theories/BandpowerForeground]
+theory: !defaults [../theories/camb, ../theories/BandpowerForeground_beams]
 likelihood: !defaults [../likelihoods/act_dr6]
 params: !defaults [../params/cosmology, ../params/foregrounds, ../params/systematics]
 prior: !defaults [../priors/foregrounds, ../priors/cosmology, ../priors/systematics]

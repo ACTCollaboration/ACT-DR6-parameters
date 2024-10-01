@@ -1,0 +1,99 @@
+soliket.CosmoPower:
+  stop_at_error: true
+  network_path: "/path/to/cosmopower/neff/networks/"
+  network_settings:
+    tt:
+      type: NN
+      filename: "TT_neff_v1"
+      log: true
+      has_ell_factor: true
+    te:
+      type: PCAplusNN
+      filename: "TE_neff_v1"
+      log: false
+      has_ell_factor: true
+    ee:
+      type: NN
+      filename: "EE_neff_v1"
+      log: true
+      has_ell_factor: true
+  renames:
+    ombh2: omega_b
+    omch2: omega_cdm
+    logA: ln10^{10}A_s
+    ns: n_s
+    tau: tau_reio
+
+soliket.CosmoPowerDerived:
+  stop_at_error: true
+  network_path: "/path/to/cosmopower/neff/networks/"
+  network_settings:
+    type: NN
+    filename: "DER_neff_v1"
+    log: true
+  derived_parameters:
+    - thetas100
+    - sigma8
+    - YHe
+    - zrei
+    - Neff
+    - taurend
+    - zrend
+    - rrend
+    - rarend
+    - taustar
+    - zstar
+    - rstar
+    - rastar
+    - zdrag
+  renames:
+    ombh2: omega_b
+    omch2: omega_cdm
+    logA: ln10^{10}A_s
+    ns: n_s
+    tau: tau_reio
+
+  # All derived parameters that we care about.
+  params:
+    thetas100:
+      latex: "100 \\theta_s"
+      derived: true
+    sigma8:
+      latex: \sigma_8
+      derived: true
+    Neff:
+      latex: N_\mathrm{eff}
+      derived: true
+    YHe:
+      latex: Y_\mathrm{He}
+      derived: true
+    zrei:
+      latex: z_\mathrm{reio}
+      derived: true
+    taurend:
+      latex: \tau_\mathrm{rec}
+      derived: true
+    zrend:
+      latex: z_\mathrm{rec}
+      derived: true
+    rrend:
+      latex: r_{s,\mathrm{rec}}
+      derived: true
+    rarend:
+      latex: r_{a,\mathrm{rec}}
+      derived: true
+    taustar:
+      latex: \tau_\star
+      derived: true
+    zstar:
+      latex: z_\star
+      derived: true
+    rstar:
+      latex: r_{s,\star}
+      derived: true
+    rastar:
+      latex: r_{a,\star}
+      derived: true
+    zdrag:
+      latex: z_d
+      derived: true
